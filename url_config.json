@@ -1,0 +1,9 @@
+{
+    "europe": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t29,57/Europa-Vegan-Rezepte.html",
+    "asia": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t14,57/Asien-Vegan-Rezepte.html",
+    "middle-east": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t57,163/Vegan-Mittlerer-und-Naher-Osten-Rezepte.html",
+    "africa": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t57,101/Vegan-Afrika-Rezepte.html",
+    "australia": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t57,145/Vegan-Australien-Rezepte.html",
+    "north-america": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t38,57/USA-oder-Kanada-Vegan-Rezepte.html",
+    "caribbean": "https://www.chefkoch.de/rs/s{PAGE_NUMBER}e1n1z1b0i0d1,2,3t57,95/Vegan-Karibik-und-Exotik-Rezepte.html"
+}
