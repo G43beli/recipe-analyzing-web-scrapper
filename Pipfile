@@ -9,6 +9,7 @@ requests = "*"
 pandas = "*"
 matplotlib = "*"
 seaborn = "*"
+progressbar2 = "*"
 
 [dev-packages]
 autopep8 = "*"
