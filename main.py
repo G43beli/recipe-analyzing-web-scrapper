@@ -1,17 +1,19 @@
 import requests as req
 import pandas as pd
 import progressbar as pb
-from services.json_service import load_json
+from services.json_service import load_json, load_proxies
 from services.plot_service import plot_bar
 from bs4 import BeautifulSoup
 from random import randint
 from time import sleep
+import urllib.request
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0'}
 
 page_number_pattern = '{PAGE_NUMBER}'
 
 url_config = load_json('url_config.json')
+#proxies = load_proxies(headers, False)
 
 data = []
 
@@ -45,4 +47,4 @@ for index, region in enumerate(url_config):
 bar.finish()
 
 df = pd.DataFrame(data, columns = ['Region', 'AmountOfRecipes', 'FirstPageRecipes'])
-plot_bar(df, 'Region', 'AmountOfRecipes', 'Amount of vegan recipes by region (chefkoch.de)', "Region", "Amount of recipes", save_as="graphics/chefkoch_de.png")
+plot_bar(df, 'Region', 'AmountOfRecipes', 'Amount of vegan recipes by region (chefkoch.de)', 'Region', 'Amount of recipes', save_as='graphics/chefkoch_de.png')
